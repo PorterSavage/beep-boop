@@ -4,5 +4,9 @@ html, body {
   margin: 0;
   background-color: #222228;
   text-align: center;
-  
+
+}
+
+p, h1 {
+  color: orange;
 }
