@@ -1,3 +1,4 @@
+//User Interface Logic---->
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
@@ -6,9 +7,11 @@ $(document).ready(function() {
     for (var i=0; i<=Number(input); i++) {
       array.push(i);
     }
+
+//Business Interface Logic---->
     $('#output1').text(array);
     for (var i = 0; i < array.length; i++) {
-      if (array[i] % 3 === 0) {
+      if (array[i] % 3 === 0 && array[i] != 0) {
         array[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
       }
       else if (String(array[i]).includes("1")) {
